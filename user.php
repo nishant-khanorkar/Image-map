@@ -39,6 +39,21 @@ class user
 		return $res ;
        
     }
+	function getSubjects($sem)
+    {
+        $this->onlyRead_Function();
+        $res=mysqli_query($this->conn,"Select * from subject where sem=$sem");
+        mysqli_close($this->conn);
+		return $res ;  
+    }
+	
+	function getPracticals($code)
+    {
+        $this->onlyRead_Function();
+        $res=mysqli_query($this->conn,"Select * from file where code=$code");
+        mysqli_close($this->conn);
+		return $res ;  
+    }
 }
 
 ?>
