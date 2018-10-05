@@ -9,7 +9,7 @@
         private $_port;
         private $_socket;
 
-		
+		/*
         function __construct() //Constant for all users
         {
             $this->_host = 'localhost';
@@ -36,8 +36,8 @@
             $this->_password = "watproject";
             return($this->connect());
         }
+		*/
 		
-		/*
 		function __construct() //Constant for all users
         {
             $this->_host = '127.0.0.1';
@@ -64,7 +64,7 @@
             $this->_password = "";
             return($this->connect());
         }
-		*/
+		
         private function connect()
         {
             $_conn = new mysqli($this->_host,$this->_username,$this->_password,$this->_database) 

@@ -36,7 +36,7 @@
 						<tr>
 						  <th scope="row"><?php echo $i ;?></th>
 						  <td><a href="<?php echo 'files/'.$id.'/'.$row['fname'];?>"><?php echo $row['name'];?></a></td>
-						  <td>Lorem Ipsum</td>
+						  <td><?php echo $row['descript'] ;?></td>
 						</tr>
 						   <?php $i=$i+1; } ?>
 					  </tbody>
